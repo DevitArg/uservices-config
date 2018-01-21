@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    producer:
+      bootstrapServers: localhost:9092
+
+mongo:
+  config:
+    uri: mongodb://promoManager:password@localhost:27017/promoManager
+    replicaSetName:
