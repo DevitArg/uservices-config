@@ -1,0 +1,18 @@
+mongo:
+  password: '{cipher}AQAzRgMTOgFjlfmLil2BQol2ZmJZ5ymL3PN+wqIWAIjnGnlr+w1AAFZ5nGeGFLB2Vg34JVr3GBdRugqBaDgVRKGdzU0aH05JDsYUw6/XZUkGgTRnVA0PLOf9aDGzwHbxxL5rovqGRvfaHgwCtGG+On1GwUMtqWQLiTQiszR0uH82JXLTLJV017jKBFlbkiI571oKX6/tCQFMWlapp/eDm8UwIiPc9KIlbHxKwOH069V5OZcptcBKQ7iKszA04a4vprbsOQid206RDYRg1GbmGvA7+pUXZfaX2Y5u4d2k/PUfovn3ZQjCV+hJGwryVMYaujx065W6NZCoU9hqu6+xo9ydYUyzHTMIzANEMYXn8vUl9JgFPj8dMO+++TNSMelPNdo='
+  config:
+    uri: mongodb://checkMeIn:${mongo.password}@mongodb:27017/checkMeIn
+    replicaSetName:
+    type: INSTANCE
+    connectTimeout: 3000
+    socketTimeout: 3000
+    serverTimeout: 3000
+    retryProperties:
+      retryBackOffTime: 5000
+      retryMaxAttempts: 3
+
+server:
+  port: 8080
+
+cxf:
+  path: /checkMeIn/v1
