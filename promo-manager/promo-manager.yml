@@ -12,7 +12,7 @@ spring:
 mongo:
   password: '{cipher}{key:dev-key}AgAonymJshvqFBhlDs6VFQSpfdk05wfR6LZBXIwKkv4nLdkhVkqCKzcGvhijXSg0czR/hyw/pxmXbqpB1lS60kxY3u61lwrJmmO+YqUFWW18o90xsgnH/b0P3EO2cnHp5vuYvCL5m6nBO+ejeQukt0xxPo69RVhPk26HYomqNMGOdYxzFi2Rk1pIDJNinSKkWdtxTtU8DavqLsIKLrR6okDXVJSYJG0j4r+0R7RNzxlanlT+bk1B+D5QA/TFcoSuGwVXcxcrzIGXuiPg4OjLQgKPgzlXz7DwqbIqzpO+ba71XAzOQBzJCrn+wtZzEETM8fVtR0Wwlissb0SDt6KLbhfTQNnFi67sFrIplpEVyksOy36LYCay53E0pDQNKJzYNR2Cl5hac58UVz/KrIocnBjlQC2flW/N5ava8etmY3mA1szv6FLZv4Qg6rSKUKxMqlko4ptz8WZhPmAubnkzrBO/AqDu8uWQ7u1JFED67HACEyE+joHWvcOF5s75DOJQX9EPdIQ8oZv90UJAJGSf/qret1tw0KoN5ICEgjZJjJK5VYPprKvjk6+Z8KxyxEiy9sMu2kF6dRgHiXRfUk/MrSLYMYC+A/RIuhiqLn3YC/qN4rnB6MY9eMRufulYdCLHE7JqDeu7Q4fT0AWT05Xs/GQkRjAByBwCH+Sv5/M/quuSdm8CSe3Sx7Q3P1NJhQT/lUKycu9xDOcNWqgJHteSALwn'
   config:
-    uri: mongodb://promoManager:password@mongodb:27017/promoManager
+    uri: mongodb://promoManager:${mongo.password}@mongodb:27017/promoManager
     replicaSetName:
     type: INSTANCE
     connectTimeout: 3000
