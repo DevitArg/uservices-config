@@ -26,4 +26,4 @@ server:
   port: 8081
 
 cxf:
-  path: /promoManager/v1
+  path: /

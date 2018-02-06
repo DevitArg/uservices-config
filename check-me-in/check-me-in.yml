@@ -15,4 +15,4 @@ server:
   port: 8080
 
 cxf:
-  path: /checkMeIn/v1
+  path: /
