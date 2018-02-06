@@ -1,3 +1,0 @@
-mongo:
-  config:
-    uri: mongodb://checkMeIn:${mongo.password}@localhost:27017/checkMeIn

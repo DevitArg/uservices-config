@@ -1,0 +1,14 @@
+server:
+  port: 9090
+
+zuul:
+  prefix: /devit/api
+#  Uncomment to disable auto-registering all services read from Eureka
+#  ignoredServices: '*'
+  routes:
+    promo-manager:
+      path: /promo-manager/**
+      serviceId: promo-manager
+    check-me-in:
+      path: /check-me-in/**
+      serviceId: check-me-in
